@@ -1,6 +1,6 @@
-# Website for CPACS
+# Website for DIANA
 
-Homepage (landing page) and announcements for CPACS (http://www.cpacs.de).
+Homepage (landing page) and announcements for DIANA ().
 
 Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [CodePassenger](http://www.codepassenger.com/).
 
@@ -13,41 +13,29 @@ Based on [Pelican](http://blog.getpelican.com/) and a modifed Polar theme by [Co
 ```
 pip install pelican
 pip install markdown
-pip install fabric
 pip install ghp-import
 ```
 
  * Clone rce-website
 
 ```
-git clone https://github.com/dlr-ly/cpacs-website
+git clone https://github.com/raul7gs/diana-website
 ```
 
-### Configuration
-
- * Set proper port for local testing, which works on your machine in `fabfile.py`
-
-```
-# Port for `serve`
-PORT = 8001
-```
 
 ## Build 
 
  * Generate website 
 ```
-fab build
+pelican content -s pelicanconf.py
 ```
 
  * Start local server for testing (http://localhost:8001/)
 ```
-fab serve
+pelican --listen output
 ```
 
- * Convenience target for rebuild and starting local server
-```
-fab reserve
-```
+To stop the server press Ctrl + c
 
 ## Deployment
 
