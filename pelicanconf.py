@@ -3,10 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'DLR'
-SITENAME = u'CPACS'
-SITEURL = "https://dlr-sl.github.io/cpacs-website"
+SITENAME = u'DIANA'
+#SITEURL = "https://dlr-sl.github.io/cpacs-website"
 #SITEURL = "https://digitalhangar-demo.pages.gitlab.dlr.de/cpacs-website-preview/"
 #SITEURL = "http://localhost:8000/"
+SITEURL = "http://localhost:8000"
+RELATIVE_URLS = True
 
 PATH = 'content'
 
