@@ -34,7 +34,7 @@ pelican content -s pelicanconf.py
 ```
 pelican --listen output
 ```
-
+Sometimes to see the changes you need to force total reload, that is done with Shift + Ctrl + R.
 To stop the server press Ctrl + c
 
 ## Deployment
