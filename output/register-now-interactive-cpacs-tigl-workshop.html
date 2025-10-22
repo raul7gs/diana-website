@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<!-- TITLE OF SITE -->
+	<title>DIANA</title>
+
+
+    <link href="https://raul7gs.github.io/diana-website/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="DIANA Full Atom Feed" />
+	
+	<!-- META DATA -->
+	<meta name="description" content="CPACS is a XML based central data schema for the exchange of data in multi-disciplinary and multi-fidelity design environments." >
+	<meta name="keywords" content="cpacs, DLR, collaboration, aircraft design, aeronautics, aerospace, space, optimization, MDO, Open Source">
+	<meta name="author" content="Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR)">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+ 
+   <!-- =========================
+      FAV AND TOUCH ICONS  
+    ============================== -->
+
+    <!-- ****** faviconit.com Favicons ****** -->
+	<link rel="shortcut icon" href="https://raul7gs.github.io/diana-website/theme/images/diana.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="https://raul7gs.github.io/diana-website/theme/images/diana.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-16.png">
+	<link rel="apple-touch-icon" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://raul7gs.github.io/diana-website/theme/images/cpacs-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="https://raul7gs.github.io/diana-website/theme/images/cpacs-144.png">
+	<meta name="msapplication-config" content="https://raul7gs.github.io/diana-website/theme/browserconfig.xml">
+	<!-- ****** faviconit.com Favicons ****** -->
+
+    <!-- =========================
+       STYLESHEETS 
+    ============================== -->
+    <!-- PRELOADER -->
+    <link rel="stylesheet" href="https://raul7gs.github.io/diana-website/theme/css/preloader.css">
+	
+	<!-- Bootstrap v3.3.4 -->
+	<link href="https://raul7gs.github.io/diana-website/theme/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- icon fonts Font Awesome 4.3.0 -->
+	<link href="https://raul7gs.github.io/diana-website/theme/css/font-awesome.min.css" rel="stylesheet"> 
+
+	<!-- Plugins  -->
+	<link href="https://raul7gs.github.io/diana-website/theme/css/jquery.fs.boxer.css" rel="stylesheet" /> 
+	<link rel="stylesheet" href="https://raul7gs.github.io/diana-website/theme/css/owl.carousel.css"> 
+
+	<!-- Prism -->
+	<link href="https://raul7gs.github.io/diana-website/theme/css/prism.css" rel="stylesheet" />
+
+	<!-- Import Custom Styles -->
+	<link href="https://raul7gs.github.io/diana-website/theme/css/style.css" rel="stylesheet"> 
+	
+</head>
+
+
+<body class="">
+	<!-- Pre Loader -->
+	<div class="pre-loader">
+		<div class="spinner"></div>
+	</div>
+	<span id="page-top"></span>
+	<!-- Main Menu -->
+	<div class="main-menu-container navbar-fixed-top-">
+		<div id="main-menu" class="navbar navbar-default" role="navigation">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- responsive navigation -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<i class="fa fa-bars"></i>
+					</button> <!-- /.navbar-toggle -->
+					<!-- Logo -->
+					<h1 class="logo">
+						<a class="navbar-brand" href="https://raul7gs.github.io/diana-website/">
+							<img height="50px" style="margin-top: 4.3vh;" src="https://raul7gs.github.io/diana-website/images/diana_logo_transp.png" alt="DIANA Logo">
+						</a><!-- /.navbar-brand -->
+					</h1>
+				</div> <!-- /.navbar-header -->
+
+				<nav class="collapse navbar-collapse">
+					<!-- Main navigation -->
+					<ul id="mainNavigation" class="main-mav nav navbar-nav pull-right">
+						<li><a class="not-in-home"class="active" href="https://raul7gs.github.io/diana-website/#page-top">Home</a>
+						</li>
+
+
+					<!--	<li><a href="https://raul7gs.github.io/diana-website/#contents">What is CPACS?</a></li>   -->
+						
+						<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/#contents">What is DIANA?</a></li>
+						<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/#news">Releases</a></li>
+
+ 
+            					<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/pages/standard-data-schema.html">Standard Data Schema</a></li>
+            					<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/pages/documentation.html">Documentation</a></li>
+            					<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/pages/examples.html">Examples</a></li>
+            					<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/pages/contribute.html">Contribute</a></li>
+            					<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/pages/forum.html">Forum</a></li>
+            					<li><a class="not-in-home" href="https://raul7gs.github.io/diana-website/pages/contact.html">Contact</a></li>
+
+
+
+						<li><a class="donate red" href="https://raul7gs.github.io/diana-website/pages/get-cpacs.html">Get DIANA</a></li>
+					</ul> <!-- /#mainNavigation -->
+				</nav> <!-- /.navbar-collapse  -->
+			</div> <!-- /.container -->
+		</div><!-- /#main-menu -->
+	</div><!-- /.main-menu-container -->
+	<!-- Main Menu End -->
+
+<section id="content">
+
+	<div class="page-name background-bg page-name-bg">
+		<div class="overlay">
+			<div class="container">
+				<h2 class="page-title m0">
+					Register Now: Interactive CPACS & TiGL Workshop 
+				</h2>
+				<div class="page-location">
+					<a href="https://raul7gs.github.io/diana-website/">Home</a> <a href="#">Releases</a> <span>Register Now: Interactive CPACS & TiGL Workshop</span>
+				</div>
+			</div><!-- /.container -->
+		</div><!-- /.overlay -->
+	</div><!-- /.page-name -->
+
+
+	<div id="contents"> 
+		<div class="container section-padding"> 
+			<div class="row">
+				<div class="col-md-9">
+					<div class="news-single"> 
+						<article class="type-post single-news single-post">
+
+
+							<div class="post-author-avatar">
+								<img src="https://raul7gs.github.io/diana-website/images/authors/Marko.jpg" alt="Post Author Avatar">
+							</div>
+
+							<h2 class="post-title">
+								<a href="https://raul7gs.github.io/diana-website/register-now-interactive-cpacs-tigl-workshop.html">Register Now: Interactive CPACS & TiGL Workshop</a>
+							</h2> 
+
+							<footer class="entry-meta">
+								<span class="author">
+									<a href="https://raul7gs.github.io/diana-website/author/marko.html" rel="author">
+										<i class="fa fa-user"></i>
+										Marko
+									</a> 
+								</span>
+								<span class="entry-date">
+									<i class="fa fa-calendar-o"></i>
+									<span class="date">Tue 17 June 2025</span>
+								</span>
+								<span class="comments-link">
+									<a href="https://raul7gs.github.io/diana-website/register-now-interactive-cpacs-tigl-workshop.html" rel="link">
+										<i class="fa fa-link"></i>
+											Permalink
+									</a>
+								</span>
+ 
+									<span class="cat-links">
+										<i class="fa fa-folder-o"></i>
+										<a href="https://raul7gs.github.io/diana-website/category/meetings.html">Meetings</a>
+									</span>
+
+							</footer><!-- /.entry-meta --> 
+							<div class="entry">
+								<p><a href="register-now-interactive-cpacs-tigl-workshop.html">
+    <img src="images/cpacs_tigl_wokshop_header.png" alt="CPACS_TIGL_Wokshop" width="100%">
+</a></p>
+<p style="text-align:center;">
+  <a href="https://dlr.expert/20-years-of-cpacs/front/kontakt.php" 
+     style="
+       background-color:#3D6CA4; 
+       color:white; 
+       padding:10px 20px; 
+       text-decoration:none; 
+       border-radius:5px; 
+       font-weight:bold;
+       display:inline-block;
+     " 
+     target="_blank" 
+     rel="noopener noreferrer">
+    Register Now
+  </a>
+</p>
+
+<p>To celebrate the 20th anniversary of CPACS, we are inviting researchers and engineers from industry, small-and medium-sized companies, research organisations, academia and think-tanks to join our event to: </p>
+<ul>
+<li>get <strong>exciting insights</strong> into both, the <strong>history and current developments of CPACS</strong> and the connected <a href="https://dlr-sc.github.io/tigl/">TiGL geometry software</a></li>
+<li>receive <strong>hands-on tutorials</strong> and support during <strong>practical exercises</strong></li>
+<li>have <strong>great networking opportunities</strong> and <strong>gain new inspiration</strong></li>
+</ul>
+<p>A <strong>pre-workshop for CPACS-newbies</strong> like students and young professionals will take place in the morning, offering in-depth hands-on experience of a digital engineering process using the CPACS Design System. This includes the CPACS data model, TiGL, and the Remote Component Environment (RCE).</p>
+<p>If multidisciplinary design-optimisation is at the core of your work – come and <strong>join us on 1-2 October 2025 at the <a href="https://zal.aero/en/">ZAL</a> in Hamburg</strong>: <a href="https://dlr.expert/20-years-of-cpacs"><strong>Register now</strong></a>!</p>
+<p><img src="images/cpacsWorkshopAgenda.png" alt="CPACS_TIGL_Wokshop" width="100%"></p>
+<h4>CPACS in practice</h4>
+<p>If you are interested in learning how the CPACS Design System has been adopted in a European Clean Aviation project, we highly recommend registering for the preceding <a href="https://www.b2match.com/e/ode4hera-thematic-and-technological-workshop"><strong>ODE4HERA workshop</strong></a>, taking place from 30 September to 1 October 2025 at ZAL Hamburg.</p>  
+							</div><!-- /.entry --> 
+						</article>
+
+						<div class="follow-us follow-share social-share">
+							<div class="follow-title">
+								<span>Share on Social Network</span>
+							</div>
+							<div class="social-btn text-center">
+								<a href="#" class="facebook">
+									<i class="fa fa-facebook"></i>
+									<span>Facebook</span>
+								</a>
+								<a href="#" class="google-plus">
+									<i class="fa fa-google-plus"></i>
+									<span>Google +</span>
+								</a>
+								<a href="#" class="twitter">
+									<i class="fa fa-twitter"></i>
+									<span>Twitter</span>
+								</a>
+								<a href="#" class="linked-in">
+									<i class="fa fa-linkedin"></i>
+									<span>linked in</span>
+								</a>
+								<a href="#" class="instagram">
+									<i class="fa fa-instagram"></i>
+									<span>Instagram</span>		
+								</a>
+							</div><!-- /.social-btn --> 
+						</div><!-- /.follow-us --> 
+
+
+        					<div id="comments" class="comments-area">
+							<h3 class="comments-title"> 
+								 Comments 
+							</h3><!-- /.comments-title -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'cpacs'; 
+    var disqus_title = 'Register Now: Interactive CPACS & TiGL Workshop';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        					</div>
+
+					</div><!-- /.news-single -->
+					
+				</div><!-- /.col-md-9 -->
+
+				<div class="col-md-3">
+					<div class="sidebar">
+						<aside class="widget widget_recent_comments">
+							<h3 class="widget-title">
+								Categories
+							</h3><!-- /.widget-title -->
+							<ul id="recentcomments">
+									<li class="recentcomments">
+										<span class="comment-author-link">
+											<a href="https://raul7gs.github.io/diana-website/category/meetings.html">Meetings</a>
+										</span> 
+									</li>
+   
+							</ul>
+						</aside><!-- /.widget -->
+
+
+
+					</div><!-- /.sidebar -->
+				</div><!-- /.col-md-3 --> 
+
+
+		</div><!-- /.container -->  
+	</div><!-- /.contents -->
+
+
+</section><!-- /#content -->
+
+    <div class="footer-area ">
+
+	<footer class="section-padding">
+		<div class="social-btn footer-social text-center">
+			<a href="https://github.com/DLR-SL/CPACS" class="github"><i class="fa fa-github"></i></a>
+		</div>
+
+
+		<div class="site-info text-center">
+			 &copy; 2023 <a href="http://www.DLR.de">Deutsches Zentrum für Luft- und Raumfahrt e.V.</a>
+			
+                	&nbsp;&sdot;&nbsp;<a href="http://www.dlr.de/sl">Institute of System Architectures in Aeronautics</a></li>
+                	&nbsp;&sdot;&nbsp;<a href="http://localhost:8000/pages/imprint.html">Imprint</a></li>
+                	&nbsp;&sdot;&nbsp;<a href="http://localhost:8000/pages/privacy.html">Privacy</a></li>
+                	&nbsp;&sdot;&nbsp;<a href="http://localhost:8000/pages/terms-of-use.html">Terms of use</a></li>
+                	&nbsp;&sdot;&nbsp;<a href="http://localhost:8000/pages/accessibility.html">Accessibility</a></li>
+
+		</div>
+
+		<div id="go-top-top">
+			  <span><i class="fa fa-chevron-up"></i></span>
+		</div>
+	</footer>
+
+	</div><!-- /footer-area -->
+
+	<!-- Include modernizr-2.8.0.min.js -->
+	<script src="https://raul7gs.github.io/diana-website/theme/js/modernizr.js"></script>
+
+	<!-- Include jquery.min.js plugin -->
+	<script src="https://raul7gs.github.io/diana-website/theme/js/jquery-2.1.0.min.js"></script>
+	<script src="https://raul7gs.github.io/diana-website/theme/js/plugins.js"></script>
+	<script src="https://raul7gs.github.io/diana-website/theme/js/onePage-nav.js"></script>
+	<script src="https://raul7gs.github.io/diana-website/theme/js/jquery.ajaxchimp.min.js"></script> 
+	<script src="https://raul7gs.github.io/diana-website/theme/js/custom.js"></script>
+	<script src="https://raul7gs.github.io/diana-website/theme/js/prism.js"></script>
+
+	<script>
+	(function($) {
+		"use strict";
+		
+	        $(window).on("load",function(e){
+	        	// Main menu
+	        	$('#main-menu #mainNavigation').onePageNav({
+	        		currentClass: 'active',
+	        		changeHash: false,
+	        		scrollSpeed: 750,
+	        		scrollThreshold: 0.5,
+	        		scrollOffset: 84,
+	        		filter: ':not(.sub-menu a, .not-in-home, .donate)',
+	        		easing: 'swing'
+	        	});  
+	        });
+		$(window).on('scroll', function (){ 
+			if ($(window).scrollTop() >$(window).height()-110){
+				$('#main-menu').addClass('navbar-fixed-top'); 
+			} else {
+				$('#main-menu').removeClass('navbar-fixed-top'); 
+			} 
+		});
+	 })(jQuery);
+	</script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25164892-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+
+</body>
+</html>
