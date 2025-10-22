@@ -27,6 +27,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # Blogroll
 #   Note: the full path is used for Imprint and Privacy, since Pelican omits pages 
