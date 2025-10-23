@@ -134,7 +134,6 @@
 					<!--	<li><a href="{{ SITEURL }}/#contents">What is CPACS?</a></li>   -->
 						
 						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %} href="{{ SITEURL }}/#contents">What is DIANA?</a></li>
-						<li><a {% if page_name != "index" %}class="not-in-home"{% endif %} href="{{ SITEURL }}/#news">Releases</a></li>
 
 						{% for title, link in MENUITEMS %}
             			<li><a class="not-in-home" href="{{ link }}">{{ title }}</a></li>
