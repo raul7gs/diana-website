@@ -187,6 +187,16 @@
             <li>
               <a href="#personalized-functionalities" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Marks, filters and plot types</a>
             </li>
+              <li>
+              <a href="#personalized-matrix" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Correlation Matrix</a>
+            </li>
+               <li>
+              <a href="#personalized-radar" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Radar Chart</a>
+            </li>
+               <li>
+              <a href="#personalized-box" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Box Plot</a>
+            </li>
+
           </ul>
         </li>
 
@@ -330,7 +340,7 @@
         </div>
         <div style="width:100%;">
             <a href="images/doc_variables.png" target="_blank">
-          <img src="images/doc_variables.png" alt="Aircraft Design Chart" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+          <img src="images/doc_variables.png" alt="Variables" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
                 </a>
         </div>
           <div style="width:100%">
@@ -364,6 +374,49 @@
                 </a>
         </div>
       </div>
+        <div id="personalized-matrix" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Correlation Matrix</h3>
+          <p>This chart allows to visualize the relationship between the different variables. The scale goes from -1 to 1, where -1 means the variables are perfectly inverse proportional and 1 that they are perfectly positively correlated. In
+          other words, negative values mean that when one variable increases the other tends to decrease, and positive values mean when a variable value increases the other variable does the same.</p>
+            <p>Values close to 0 mean there is no correlation between the variables. A colour scale is applied for a faster understanding. It is important to note that correlation matrices fail to accurately consider non linear relationships,
+            being necessary for this more advanced methods such as SHAP (for more information consider the datat analysis section of the documentation).</p>
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_correlation.png" target="_blank">
+          <img src="images/doc_correlation.png" alt="Correlation" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+      </div>
+        <div id="personalized-radar" style="display:flex; align-items:flex-start; margin-bottom:30px;margin-top:80px;">
+        <div style="flex:1; padding-right:20px;width:30%">
+          <h3 style="max-width:1300px;margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Radar Chart</h3>
+          <p>This is one of the most suitable charts for the comparison of a small quantity of designs for multiple variables simultaneously. In this example, different weights are compared for three similar aircarft designs.</p>
+            <p>For each variable, it is possible to see the difference for the different designs. In case that the different variables compared have different units or important differences in the scales, it it possible to normalize them
+            in the settings button, simplifying the comparison process.</p>
+
+        </div>
+        <div style="flex:1; text-align:right;width:70%;">
+            <a href="images/doc_radar.png" target="_blank">
+          <img src="images/doc_radar.png" alt="Radar" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+      </div>
+        <div id="personalized-box" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Box plot</h3>
+          <p>Box plots are statistical charts that allow to understand the distribution of a certain variable along the design space. It is divided in two parts, the box and the whiskers.
+              The box represents the quartiles 1 and 3, with the median (q2) in the middle. The whiskers represent the maximum and minimum variables to be considered normal. Every value outside of these limits is considered an
+          outlier</p>
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_box.png" target="_blank">
+          <img src="images/doc_box.png" alt="Box plot" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+            <p>If desired, it is possible to observe the design points by a checkbox found in the settings, as observed in the picture above</p>
+      </div>
+
 
 
 
