@@ -144,11 +144,11 @@
 			<div class="container section-padding"> 
 				<h2 class="section-title">Documentation</h2>
 				
-    <div style="display:flex; width: 140% ;margin:50px auto; font-family:'Segoe UI', Roboto, sans-serif; line-height:1.6; color:#222;">
+    <div style="display:flex; width: 60vw ;margin:50px auto; font-family:'Segoe UI', Roboto, sans-serif; line-height:1.6; color:#222;">
 
   <!-- Lateral Bar-->
   <nav style="position:fixed; top:120px; left:20px; width:220px; font-family:'Segoe UI', sans-serif; background-color:#f5f7fa; padding:15px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-      <h4 style="color:#5e35b1; margin-top:0; margin-bottom:10px;">Documentation</h4>
+      <h4 style="color:#9575cd; margin-top:0; margin-bottom:10px;">Documentation</h4>
       <ul style="list-style:none; padding-left:0; margin:0;">
 
         <!-- Principal Section -->
@@ -163,20 +163,26 @@
               <a href="#mtow-oem" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">MTOW/OEM Breakdown</a>
             </li>
             <li>
-              <a href="#lifting-surface" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Lifting Surface Geometry Chart</a>
+              <a href="#lifting-surface" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Lifting Surface Geometry Charts</a>
+            </li>
+            <li>
+              <a href="#payload-range" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Payload-Range diagram</a>
+            </li>
+              <li>
+              <a href="#aerodynamic-polar" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Aerodynamic Polar</a>
+            </li>
+              <li>
+              <a href="#aircraft-3D" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">3D geometry</a>
             </li>
           </ul>
         </li>
 
         <!--Another Principal section -->
         <li style="margin-top:10px;">
-          <a href="#trajectories" style="color:#9575cd; text-decoration:none;">Trajectories</a>
+          <a href="#personalized-plot" style="color:#9575cd; text-decoration:none;">Personalized Plots</a>
           <ul style="list-style:none; padding-left:15px; margin-top:5px;">
             <li>
-              <a href="#simple-trajectory" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Simple Trajectory</a>
-            </li>
-            <li>
-              <a href="#complex-trajectory" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Complex Trajectory</a>
+              <a href="#personalized-variables" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Variables</a>
             </li>
           </ul>
         </li>
@@ -189,41 +195,169 @@
 
     <!-- Main section  -->
     <div id="aircraft-design-charts" style="margin-bottom:50px;">
+        <h2 style=" color:#9575cd; margin-left: -20px  ">Aircraft Design Charts</h2>
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">All these charts are only available if the inputs are CPACS files</h4>
+
 
         <!-- Subsections  -->
-      <div id="aircraft-design-kit" style="display:flex; align-items:flex-start; margin-bottom:30px;">
-        <div style="flex:1; padding-right:20px; width:30%">
+      <div id="aircraft-design-kit" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
           <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Aircraft Design Kit and Combine</h3>
-          <p>Explanation of how to use the aircraft design kit and combine feature.</p>
+          <p>To generate an aircraft design chart, you can use the so-called aircraft design kit. This kit contains 12 different charts covering files such as geometry, aerodynamics or performance, among others.
+          The currently supported charts are mass breakdown, lifting surface geometry (wing , HTP and VTP), the aerodynamic polar (cd vs cl and L/D vs cl), the payload range diagram,
+              the 3-D of the aircraft, the power breakdown, the center of gravity chart, the specific block energy and finally the trajectory plots. Many of these charts have their
+              additional settings, which will be explained in more details along the documentation.</p>
+         <p>To create the chart any chart is really simple, you need to click on the desired chart type and in the aircraft desired to be included in the chart. Multiple charts can me generated for multiple aircraft
+         simultaneously. If all aircraft are wanted to be included in the same chart, the combine checkbox can be used.</p>
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_kit.png" target="_blank">
+          <img src="images/doc_kit.png" alt="Aircraft Design Chart" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+          <div style="width:100%">
+              <p>If an aircraft file does not have enough information to generate a specific diagram, the corresponding chart checkbox will appear as disabled.</p>
+          </div>
+      </div>
+
+      <div id="mtow-oem" style="display:flex; align-items:flex-start; margin-bottom:30px;margin-top:80px;">
+        <div style="flex:1; padding-right:20px;width:30%">
+          <h3 style="max-width:1300px;margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">MTOW/OEM Breakdown</h3>
+          <p>This chart allows you to observe the mass distribution of the different components within the aircraft in a sunburst chart. They are divided in three
+          main sections which are OEM (operative empty weight), fuel and payload.  </p>
+            <p>The OEM section is subdivided in all the different structural components of the aircraft,
+          including wings, systems or fuselage among others. The fuel is subdivided in block and reserve and the payload in passengers and cargo</p>
+            <p>To obtain more details of the different components of the OEM, it is possible to get a more detailed view by generating the OEM breakdown of
+            the aircraft. This can be done when clicking on the corresponding checkbox in a selector (which is the default option). </p>
+            <p>In the case of the MTOW chart (mass take off mass) breakdown the suer need to select a specific mission, although by default the design mission is selected </p>
+            <p>Finally, both charts can be represented as bar charts in the settings button, giving additional insights of the mass distribution. It is also the plot type automatically chosen for the comparison of
+            multiple aircraft (when the combined option is active)</p>
         </div>
         <div style="flex:1; text-align:right;width:70%;">
-          <img src="images/mtow.png" alt="Aircraft Design Chart" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+            <a href="images/mtow.png" target="_blank">
+          <img src="images/mtow.png" alt="OEM" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
         </div>
       </div>
 
-      <div id="mtow-oem" style="display:flex; align-items:flex-start; margin-bottom:30px;">
-        <div style="flex:1; padding-right:20px;">
-          <h3 style="max-width:1300px;margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">MTOW/OEM Breakdown</h3>
-          <p>Description of maximum takeoff weight and operating empty mass breakdown.</p>
+      <div id="lifting-surface" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Lifting Surface Geometry Charts</h3>
+          <p>These charts allow to observe the geometry of the different lifting surfaces of the aircraft. These are the wing, the horizontal tail plane (HTP) and the vertical tail plane</p>
+
         </div>
-        <div style="flex:1; text-align:right;">
-          <img src="images/mtow_oem.png" alt="MTOW/OEM Chart" style="max-width:90%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+        <div style="width:100%;">
+            <a href="images/doc_lift.png" target="_blank">
+          <img src="images/doc_lift.png" alt="Lifting surfaces" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+          <div style="width:100%">
+              <p>Two additional settings exist in these charts. These are the option to observe the surface movables (flaps, elevator, rudder,....) and the option in the comparison to set a common origin
+              for the different surfaces to compare sizes in a clearer manner.</p>
+          </div>
+      </div>
+
+        <div id="payload-range" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Payload-Range Diagram</h3>
+             <p style="font-size:0.9em; color:#666; margin-bottom:15px;">CPACS nodes necessary: /cpacs/vehicles/aircraft/model/analyses/trajectories</p>
+          <p>This chart allows users to study how the mission payload mass and range are related. Specilly interesting is to observe the maximum range of the aircraft (bottom right). In the settings is also possible
+          to add the different calculated missions as markers, allowing to determine if the satisfied the requirements or not.</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_PR.png" target="_blank">
+          <img src="images/doc_PR.png" alt="Payload Range" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
         </div>
       </div>
 
-      <div id="lifting-surface" style="display:flex; align-items:flex-start; margin-bottom:30px;">
-        <div style="flex:1; padding-right:20px;">
-          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Lifting Surface Geometry Chart</h3>
-          <p>Explanation of lifting surface geometry charts.</p>
+        <div id="aerodynamic-polar" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Aerodynamic Polar</h3>
+          <p>These charts are used to evaluate the aerodynamic performance of the aircraft. Two different charts are permitted. The first one, on the left, is the aerodynamic polar (lift coefficient versus drag coefficient).
+          The second chart, on the right, shows the aerodynamic efficiency versus the lift coefficient.</p>
+
         </div>
-        <div style="flex:1; text-align:right;">
-          <img src="images/lifting_surface.png" alt="Lifting Surface Geometry" style="max-width:90%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+        <div style="width:100%;">
+            <a href="images/doc_polar.png" target="_blank">
+          <img src="images/doc_polar.png" alt="Payload Range" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+             <div style="width:100%">
+              <p>In both cases in the settings is possible to add the desired range for cruise (with dash lines) and the actual cruise performance of the aircraft (with a croos mark),
+                  allowing to check if the aircraft satisfies the requirements or not.</p>
+          </div>
+      </div>
+        <div id="aircraft-3D" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">3D geometry</h3>
+          <p>This chart allows to observe the aircraft in 3D. Four different views are allowed: isometric, front, side and top. It is also possible to set the camera totally free, allowing
+          the user to obtain any desired view of the aircraft. Additionaly, in the front, side and top views it is possible to add dimensions automatically to the aircraft, as shown on the
+          right of picture below.</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_3D.png" target="_blank">
+          <img src="images/doc_3D.png" alt="Payload Range" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
         </div>
       </div>
 
     </div>
+      <div style="flex-grow:1; padding-left:20px;">
+          </div>
+    <div id="personalized-plot" style="margin-bottom:50px;">
+        <h2 style=" color:#9575cd; margin-left: -20px  ">Personalized Plots</h2>
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">All these charts are only available if the inputs are CPACS files</h4>
+
+
+        <!-- Subsections  -->
+      <div id="personalized-variables" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Aircraft Design Kit and Combine</h3>
+          <p>To generate an aircraft design chart, you can use the so-called aircraft design kit. This kit contains 12 different charts covering files such as geometry, aerodynamics or performance, among others.
+          The currently supported charts are mass breakdown, lifting surface geometry (wing , HTP and VTP), the aerodynamic polar (cd vs cl and L/D vs cl), the payload range diagram,
+              the 3-D of the aircraft, the power breakdown, the center of gravity chart, the specific block energy and finally the trajectory plots. Many of these charts have their
+              additional settings, which will be explained in more details along the documentation.</p>
+         <p>To create the chart any chart is really simple, you need to click on the desired chart type and in the aircraft desired to be included in the chart. Multiple charts can me generated for multiple aircraft
+         simultaneously. If all aircraft are wanted to be included in the same chart, the combine checkbox can be used.</p>
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_kit.png" target="_blank">
+          <img src="images/doc_kit.png" alt="Aircraft Design Chart" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+          <div style="width:100%">
+              <p>If an aircraft file does not have enough information to generate a specific diagram, the corresponding chart checkbox will appear as disabled.</p>
+          </div>
+      </div>
+
+
+
+      <div id="lifting-surface" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Lifting Surface Geometry Charts</h3>
+          <p>These charts allow to observe the geometry of the different lifting surfaces of the aircraft. These are the wing, the horizontal tail plane (HTP) and the vertical tail plane</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_lift.png" target="_blank">
+          <img src="images/doc_lift.png" alt="Lifting surfaces" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+          <div style="width:100%">
+              <p>Two additional settings exist in these charts. These are the option to observe the surface movables (flaps, elevator, rudder,....) and the option in the comparison to set a common origin
+              for the different surfaces to compare sizes in a clearer manner.</p>
+          </div>
+      </div>
+
+
+    </div>
 
   </div>
+      </div>
+
 </div>
 
     
