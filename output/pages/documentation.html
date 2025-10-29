@@ -181,8 +181,11 @@
         <li style="margin-top:10px;">
           <a href="#personalized-plot" style="color:#9575cd; text-decoration:none;">Personalized Plots</a>
           <ul style="list-style:none; padding-left:15px; margin-top:5px;">
-            <li>
+              <li>
               <a href="#personalized-variables" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Variables</a>
+            </li>
+            <li>
+              <a href="#personalized-functionalities" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Marks, filters and plot types</a>
             </li>
           </ul>
         </li>
@@ -196,7 +199,7 @@
     <!-- Main section  -->
     <div id="aircraft-design-charts" style="margin-bottom:50px;">
         <h2 style=" color:#9575cd; margin-left: -20px  ">Aircraft Design Charts</h2>
-        <h4 style="margin-bottom:40px;  margin-left: -20px  ">All these charts are only available if the inputs are CPACS files</h4>
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">These charts are specially used for aircraft design. All these charts are only available if the inputs are CPACS files</h4>
 
 
         <!-- Subsections  -->
@@ -309,48 +312,61 @@
           </div>
     <div id="personalized-plot" style="margin-bottom:50px;">
         <h2 style=" color:#9575cd; margin-left: -20px  ">Personalized Plots</h2>
-        <h4 style="margin-bottom:40px;  margin-left: -20px  ">All these charts are only available if the inputs are CPACS files</h4>
-
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">This is where the user can generate their own charts, allowing to explore the data and to discover insights within it. The GUI of each personalized plot can be observed in the picture below. First in the top we have the axes. To generate a
+        chart in DIANA is really simple, you just need to select the variables to be included in the chart and automatically it will be generated (more information on how is found in the variables section). Once the chart has been generated, the GUI allows
+        to add additional markers, filter the data, change the plot type and change additional settings. In the next sections further information is provided.</h4>
+        <div style="width:100%;">
+            <a href="images/doc_personalized.png" target="_blank">
+          <img src="images/doc_personalized.png" alt="Personalized Charts" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
 
         <!-- Subsections  -->
       <div id="personalized-variables" style=" align-items:flex-start; margin-bottom:30px;">
         <div style="width:100%">
-          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Aircraft Design Kit and Combine</h3>
-          <p>To generate an aircraft design chart, you can use the so-called aircraft design kit. This kit contains 12 different charts covering files such as geometry, aerodynamics or performance, among others.
-          The currently supported charts are mass breakdown, lifting surface geometry (wing , HTP and VTP), the aerodynamic polar (cd vs cl and L/D vs cl), the payload range diagram,
-              the 3-D of the aircraft, the power breakdown, the center of gravity chart, the specific block energy and finally the trajectory plots. Many of these charts have their
-              additional settings, which will be explained in more details along the documentation.</p>
-         <p>To create the chart any chart is really simple, you need to click on the desired chart type and in the aircraft desired to be included in the chart. Multiple charts can me generated for multiple aircraft
-         simultaneously. If all aircraft are wanted to be included in the same chart, the combine checkbox can be used.</p>
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Variables</h3>
+          <p>Depending on the number and type (continuous, integer, categorical) of the variables included, different plot types can be generated. Currently 10 different types of charts are available in DIANA. Further information about how to obtain
+          each of them can be found in the help section within DIANA, also shown in the picture below. </p>
         </div>
         <div style="width:100%;">
-            <a href="images/doc_kit.png" target="_blank">
-          <img src="images/doc_kit.png" alt="Aircraft Design Chart" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+            <a href="images/doc_variables.png" target="_blank">
+          <img src="images/doc_variables.png" alt="Aircraft Design Chart" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
                 </a>
         </div>
           <div style="width:100%">
-              <p>If an aircraft file does not have enough information to generate a specific diagram, the corresponding chart checkbox will appear as disabled.</p>
+              <p>More information on some of these charts can be found further below in the documentation</p>
           </div>
       </div>
 
-
-
-      <div id="lifting-surface" style=" align-items:flex-start; margin-bottom:30px;">
+        <div id="personalized-functionalities" style=" align-items:flex-start; margin-bottom:30px;">
         <div style="width:100%">
-          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Lifting Surface Geometry Charts</h3>
-          <p>These charts allow to observe the geometry of the different lifting surfaces of the aircraft. These are the wing, the horizontal tail plane (HTP) and the vertical tail plane</p>
-
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Marks, filters and plot types</h3>
+          <p>To further explore the different functionalities of the personalized plots GUI, we are going to use a dataset with around 2000 different military aircraft from the DLR. In this case, it has been decided to plot three
+          key variables, which are the MTOW, the fuel mass and the wing span. According to literature, the most suitable chart for this example case was a scatter matrix.</p>
+            <p>Once the chart has been generated, it is possible to add additional variables though markers in the form of colour, shape and/or size. This can be observed in the picture below, where the drag coefficient has been added as a colour mark.</p>
         </div>
         <div style="width:100%;">
-            <a href="images/doc_lift.png" target="_blank">
-          <img src="images/doc_lift.png" alt="Lifting surfaces" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+            <a href="images/doc_markers.png" target="_blank">
+          <img src="images/doc_markers.png" alt="Marker" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
                 </a>
         </div>
           <div style="width:100%">
-              <p>Two additional settings exist in these charts. These are the option to observe the surface movables (flaps, elevator, rudder,....) and the option in the comparison to set a common origin
-              for the different surfaces to compare sizes in a clearer manner.</p>
+              <p>Filters can be applied both before or after the chart has been generated. These are interactive, so that the effects can be observed in the charts in real time. Right now,
+                  simple filters based exclusively on variables values are admitted. This means ranges for continuous filters and specific values for discrete variables. Multiple filters can be applied simultaneously</p>
           </div>
+            <div style="width:100%">
+              <p>Finally, as mentioned before, if the data selected can be plotted in a different chart type, all the different options will appear coloured (as observed below). To change to a different plot type, it is only necessary
+              to click ojn the corresponding picture. In this example a filter for the wing span has been applied and the chart type has been changed to a parallel coordinate chart.</p>
+          </div>
+            <div style="width:100%;">
+            <a href="images/doc_filters_plot_type.png" target="_blank">
+          <img src="images/doc_filters_plot_type.png" alt="Marker" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
       </div>
+
+
+
 
 
     </div>
