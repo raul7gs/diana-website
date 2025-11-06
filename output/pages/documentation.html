@@ -174,6 +174,18 @@
               <li>
               <a href="#aircraft-3D" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">3D geometry</a>
             </li>
+              <li>
+              <a href="#center-gravity" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">CG plots</a>
+            </li>
+              <li>
+              <a href="#SBER" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">SBER</a>
+            </li>
+              <li>
+              <a href="#trajectories" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Trajectories</a>
+            </li>
+              <li>
+              <a href="#engine-deck" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Engine deck</a>
+            </li>
           </ul>
         </li>
 
@@ -336,6 +348,108 @@
                 </a>
         </div>
       </div>
+        <div id="center-gravity" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">CG plots</h3>
+          <p>These plots represent the center of gravity (CG) distribution of the aircraft. The user can select from three different chart types, each displayed as a scatter plot showing
+              the CG positions along the fuselage’s longitudinal axis (x-axis) and the height relative to the fuselage centerline (y-axis).</p>
+            <p> •  Components CG: Displays the center of gravity of individual aircraft components such as the fuselage, wings, horizontal and vertical tailplanes (HTP and VTP), engines, and onboard systems.</p>
+            <p> •  Fuel and Payload CG: Shows the CG positions for the fuel and payload, subdivided into cargo and passengers, along with the aircraft’s OEM (Operating Empty Mass) CG.</p>
+            <p> •  Overall CG: Represents the total aircraft CG for different loading configurations: MTOM (Maximum Take-Off Mass), OEM + fuel, OEM + payload, and OEM only — illustrating the aircraft’s complete operational CG range.</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_cg1.png" target="_blank">
+              <img src="images/doc_cg1.png" alt="CG1" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+            <div style="width:100%">
+            <p>Each point in the plot is displayed with a distinct color to represent different components or data categories. When comparing multiple aircraft, the plot uses different colors for each aircraft,
+                allowing clear visual differentiation. Points belonging to the same aircraft share the same color but can be individually identified through Plotly’s hover functionality</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_cg2.png" target="_blank">
+              <img src="images/doc_cg2.png" alt="CG2" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+      </div>
+
+
+        <div id="SBER" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">SBER</h3>
+          <p>The Specific Block Energy (SBE) vs. Range plot illustrates the aircraft’s energy consumption per passenger and per nautical mile across different mission ranges.</p>
+            <p>The tool filters all available aircraft missions according to payload and range, then groups them based on payload level. The user can then plot all missions with the same payload on
+                an SBE vs. Range chart to analyze how mission range affects energy consumption for a given payload configuration.</p>
+            <p>As with other plots, this feature also supports comparing different aircraft concepts, allowing direct assessment of energy efficiency across multiple designs or configurations.</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_sbr.png" target="_blank">
+          <img src="images/doc_sbr.png" alt="sber" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+      </div>
+
+        <div id="trajectories" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Trajectories</h3>
+          <p>The Trajectory Plot displays all available flight trajectories for a set of aircraft, including low-speed trajectories, block missions, and reserve missions. Each trajectory consists of a series of variables
+              computed at different time steps throughout the mission. Some examples are ground distance, Mach number, lift-to-drag ratio (L/D), aerodynamic coefficients, and thrust.</p>
+            <p>The user can select which variables to plot using two dropdown selectors: one for the x-axis variable and another for the y-axis variable. The y-axis supports displaying two variables simultaneously,
+                allowing direct comparison against the same x-axis variable. By default, the ground distance is selected as the x-axis variable. The chart type is a line chart.</p>
+            <p>The plot also supports multiple aircraft, enabling easy comparison of equivalent missions across different aircraft designs.</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_traj.png" target="_blank">
+          <img src="images/doc_traj.png" alt="traj" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+      </div>
+
+        <div id="engine-deck" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Engine deck</h3>
+          <p>The engine decks are data structures that store the engine performance parameters available for different operating conditions, defined by Mach number and altitude. Each deck contains information such as available
+              thrust settings, turbine entry temperature (TET), fuel flow, NOx emissions, and other relevant performance data.</p>
+            <p>Two types of plots are available:</p>
+            <p> •  SFC Bucket Plot: Displays the thrust-specific fuel consumption (SFC) of the engine as a function of thrust for a given flight condition. The user can select multiple altitudes
+                and Mach numbers from the engine deck, and the plot will show all corresponding combinations with their respective SFC curves (“buckets”).
+                This plot also supports multi-aircraft comparison, allowing users to evaluate fuel consumption differences between designs under identical flight conditions.</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_engine1.png" target="_blank">
+              <img src="images/doc_engine1.png" alt="E1" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+            <div style="width:100%">
+            <p> •  Thrust Lapse Plot: Illustrates how available thrust varies with Mach number for different altitudes. The user can select one or more altitudes from the aero-performance map and visualize all curves together.
+                As with the SFC plot, this view supports multiple aircraft, enabling direct comparison of thrust performance across different designs.</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_engine2.png" target="_blank">
+              <img src="images/doc_engine2.png" alt="E2" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
       <div style="flex-grow:1; padding-left:20px;">
