@@ -199,6 +199,26 @@
 
           </ul>
         </li>
+          <li style="margin-top:10px;">
+          <a href="#dashboard" style="color:#9575cd; text-decoration:none;">Dashboard</a>
+        </li>
+          <li style="margin-top:10px;">
+          <a href="#data-analysis" style="color:#9575cd; text-decoration:none;">Data analysis</a>
+          <ul style="list-style:none; padding-left:15px; margin-top:5px;">
+              <li>
+              <a href="#analysis-pareto" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Pareto front</a>
+            </li>
+            <li>
+              <a href="#analysis-outliers" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Outliers detection</a>
+            </li>
+              <li>
+              <a href="#analysis-clustering" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Automatic clustering</a>
+
+          </ul>
+        </li>
+          <li style="margin-top:10px;">
+          <a href="#explainable-ia" style="color:#9575cd; text-decoration:none;">Explainable IA</a>
+        </li>
 
       </ul>
     </nav>
@@ -320,7 +340,7 @@
     </div>
       <div style="flex-grow:1; padding-left:20px;">
           </div>
-    <div id="personalized-plot" style="margin-bottom:50px;">
+        <div id="personalized-plot" style="margin-bottom:50px;">
         <h2 style=" color:#9575cd; margin-left: -20px  ">Personalized Plots</h2>
         <h4 style="margin-bottom:40px;  margin-left: -20px  ">This is where the user can generate their own charts, allowing to explore the data and to discover insights within it. The GUI of each personalized plot can be observed in the picture below. First in the top we have the axes. To generate a
         chart in DIANA is really simple, you just need to select the variables to be included in the chart and automatically it will be generated (more information on how is found in the variables section). Once the chart has been generated, the GUI allows
@@ -332,7 +352,7 @@
         </div>
 
         <!-- Subsections  -->
-      <div id="personalized-variables" style=" align-items:flex-start; margin-bottom:30px;">
+        <div id="personalized-variables" style=" align-items:flex-start; margin-bottom:30px;">
         <div style="width:100%">
           <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Variables</h3>
           <p>Depending on the number and type (continuous, integer, categorical) of the variables included, different plot types can be generated. Currently 10 different types of charts are available in DIANA. Further information about how to obtain
@@ -346,7 +366,7 @@
           <div style="width:100%">
               <p>More information on some of these charts can be found further below in the documentation</p>
           </div>
-      </div>
+        </div>
 
         <div id="personalized-functionalities" style=" align-items:flex-start; margin-bottom:30px;">
         <div style="width:100%">
@@ -373,7 +393,7 @@
           <img src="images/doc_filters_plot_type.png" alt="Marker" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
                 </a>
         </div>
-      </div>
+        </div>
         <div id="personalized-matrix" style=" align-items:flex-start; margin-bottom:30px;">
         <div style="width:100%">
           <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Correlation Matrix</h3>
@@ -387,7 +407,7 @@
           <img src="images/doc_correlation.png" alt="Correlation" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
                 </a>
         </div>
-      </div>
+        </div>
         <div id="personalized-radar" style="display:flex; align-items:flex-start; margin-bottom:30px;margin-top:80px;">
         <div style="flex:1; padding-right:20px;width:30%">
           <h3 style="max-width:1300px;margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Radar Chart</h3>
@@ -401,7 +421,7 @@
           <img src="images/doc_radar.png" alt="Radar" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
                 </a>
         </div>
-      </div>
+        </div>
         <div id="personalized-box" style=" align-items:flex-start; margin-bottom:30px;">
         <div style="width:100%">
           <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Box plot</h3>
@@ -415,7 +435,143 @@
                 </a>
         </div>
             <p>If desired, it is possible to observe the design points by a checkbox found in the settings, as observed in the picture above</p>
-      </div>
+        </div>
+            <div style="flex-grow:1; padding-left:20px;">
+          </div>
+        <div id="dashboard" style="margin-bottom:50px;">
+        <h2 style=" color:#9575cd; margin-left: -20px  ">Dashboard</h2>
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">Once all the necessary charts have been generated, these can be combined together for decision-making in the
+            dashboard tab, as shown below. The process to generate a dashboard is really simple. There is a selector in the top of
+            the GUI with all the charts that have been generated, either aircraft design charts or personalized ones. The user just
+             needs to click on the desired charts and they will be incorporated into the dashboard. To maintain an optimal balance
+            between information density and readability needed for decision-making, users can generate new dashboards by clicking
+             the blue addition button on the top left</h4>
+            <div style="width:100%;">
+            <a href="images/doc_variables.png" target="_blank">
+          <img src="images/doc_variables.png" alt="Variables" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">Each dashboard is a white canvas, where the user can add as many charts as desired. Moreover, the user has full
+                control over each chart size and positioning, through drag-and-drop functionality. The chart can be moved by clicking on the top right and its dimensions can be modified by clicking on the bottom right.</h4>
+            <h4 style="margin-bottom:40px;  margin-left: -20px  ">Dashboards also allow to add text and images. In the case of texts, a drag and drop element with modifiable text will be added. For images, an expandable asking for a picture to be uploaded will appear.</h4>
+            <h4 style="margin-bottom:40px;  margin-left: -20px  ">Finally, it is important to mention that the different charts within the app are interconnected. This means if one or more design points are filtered or selected in one chart, the same will happen in the other charts, as shown below.</h4>
+                    <div style="width:100%;">
+                <a href="images/doc_variables.png" target="_blank">
+              <img src="images/doc_variables.png" alt="Variables" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                    </a>
+        </div>
+        </div>
+            <div style="flex-grow:1; padding-left:20px;">
+          </div>
+        <div id="data-analysis" style="margin-bottom:50px;">
+        <h2 style=" color:#9575cd; margin-left: -20px  ">Data analysis</h2>
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">When dealing with big datasets, it is necessary that the user has enough tools to discover trends within the data, as well as the most interesting points to perform a more detailed analysis. This is the purpose of the following
+        methodologies encompassed by this section. All these functionalities are found in the data tab within DIANA on the right side of the data table</h4>
+
+        <!-- Subsections  -->
+        <div id="analysis-pareto" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Pareto front</h3>
+          <p> When there are multiple conflicting objectives to consider, Pareto fronts are commonly used.  A Pareto front represents the set of optimal design solutions where improving one objective would require compromising at least one other. To show
+          an example of the process within DIANA, we will consider a dataset with around 2300 different space launchers.</p>
+            <p> The first step is to include the objectives within DIANA. It is necessary to specify for each one rather if they are wanted to be minimized or maximized. In our example, we want to maximize the payload mass while minimizing the cost</p>
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_pareto1.png" target="_blank">
+          <img src="images/doc_pareto1.png" alt="Pareto 1" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+          <div style="width:100%">
+              <p>The next step is to set the constraints, in case they exist. In our case, there were a structural and a volume constraint. It only accepts numerical constraints, both inequality and equality ones.</p>
+          </div>
+        </div>
+             <div style="width:100%;">
+            <a href="images/doc_pareto2.png" target="_blank">
+          <img src="images/doc_pareto2.png" alt="Pareto 2" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+            <div style="width:100%">
+              <p>Finally, to see the Pareto front you just need to set the objectives in the axes of a 2D or 3D scatter plot, and add the Pareto front as a marker, as shown below.</p>
+          </div>
+            <div style="width:100%;">
+            <a href="images/doc_pareto3.png" target="_blank">
+          <img src="images/doc_pareto3.png" alt="Pareto 3" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+
+
+        </div>
+            <!-- Subsections  -->
+        <div id="analysis-outliers" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Outliers detection</h3>
+          <p>Outliers are data points that significantly differ from the rest of the dataset. They play a key role in data analysis, as they are often associated with errors, anomalies, or optimal designs. Therefore, analysts should dedicate time to investigating them.
+              There are plenty of different methods to obtain these outliers, however, within DIANA there are three methods: Isolation Forest, DBSCAN and K means</p>
+            <p>The inputs required by each of them are found within DIANA GUI, which can be observed in the figure below. For more information about how these methods work, users can refer to the
+                <a href="https://scikit-learn.org/stable/">scikit-learn documentation</a></p>
+
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_outliers_1.png" target="_blank">
+          <img src="images/doc_outliers_1.png" alt="Outliers 1" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+
+          <div style="width:100%">
+              <p>Once the outliers have been identified, a new boolean variable is generated, indicating whether each data point is an outlier or not (and, in some cases, to what degree).
+                  This variable can later be used as a marker. An example of this applied to a military aircraft dataset is shown below</p>
+          </div>
+            <div style="width:100%;">
+            <a href="images/doc_outliers_2.png" target="_blank">
+          <img src="images/doc_outliers_2.png" alt="Outliers 2" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+        </div>
+
+            <div id="analysis-clustering" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Automatic Clustering</h3>
+          <p>Automatic clustering is an unsupervised machine learning technique that automatically groups data into different clusters based on their similarities.
+              This helps users uncover hidden patterns and insights within the dataset, such as previously unknown relationships between data points..</p>
+            <p>There are again different methods that can be used within DIANA to obtain these clusters, such as K means or Affinity propagation. For more infomration, users can refer to the
+                <a href="https://scikit-learn.org/stable/">scikit-learn documentation</a></p>
+            <p>Once the chosen algorithm has been executed, a new variable is obtained linking each design point to a certain cluster. This variable can be later used to observe the clusters, as shown in the figure below </p>
+
+
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_clusters.png" target="_blank">
+          <img src="images/doc_clusters.png" alt="Clusters" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+
+        </div>
+
+            <div style="flex-grow:1; padding-left:20px;">
+          </div>
+        <div id="explainable-ia" style="margin-bottom:50px;">
+        <h2 style=" color:#9575cd; margin-left: -20px  ">Explainable IA</h2>
+        <h4 style="margin-bottom:40px;  margin-left: -20px  ">Data analysis allows us to uncover insights within a dataset, but in most cases, it does not explain the reasoning behind those insights. For example, it can detect outliers, but it cannot explain why certain data points are considered outliers.
+
+          To bridge this gap, explainable AI (XAI) can be used, enabling designers not only to save time when trying to understand the machine’s results but also to build trust in them. These functionalities will soon be available in DIANA.</h4>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
