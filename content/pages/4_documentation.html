@@ -50,6 +50,9 @@
               <li>
               <a href="#engine-deck" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Engine deck</a>
             </li>
+              <li>
+              <a href="#power-breakdown" style="color:#7e57c2; font-size:0.9em; text-decoration:none;">Power Breakdown</a>
+            </li>
           </ul>
         </li>
 
@@ -298,6 +301,25 @@
             <a href="images/doc_engine2.png" target="_blank">
               <img src="images/doc_engine2.png" alt="E2" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
                 </a>
+        </div>
+      </div>
+
+        <div id="power-breakdown" style=" align-items:flex-start; margin-bottom:30px;">
+        <div style="width:100%">
+          <h3 style="margin-top:0; color:#5e35b1; border-bottom:2px solid #9575cd; display:inline-block; padding-bottom:4px;">Power breakdown</h3>
+            <p style="font-size:0.9em; color:#666; margin-bottom:15px;">CPACS nodes necessary: Vehicles/aircraft/model/systemArchitectures, Vehicles/aircraft/model/systems, Vehicles/aircraft/model/analyses/powerBreakdowns, Vehicles/systemElements </p>
+          <p>This plot visualizes the CPACS node powerBreakdowns as a Sankey diagram, which allows to visualize the various power flows exchanged between system elements, as seen in the figure below.
+              A fix color coding is applied to the power flows: light blue for mechanical power, yellow for electric power, red for heat flow, dark blue for mass flow.</p>
+        </div>
+        <div style="width:100%;">
+            <a href="images/doc_power_andrea.png" target="_blank">
+              <img src="images/doc_power_andrea.png" alt="Power" style="max-width:100%; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);" />
+                </a>
+        </div>
+            <div style="width:100%">
+            <p> The user is asked to select which power breakdown to visualize, from a drop-down menu containing all powerBreakdown uIDs found in the CPACS file, or to visualize all powerBreakdowns at once though the all_systems option.</p>
+                <p> In the resulting plot, all system elements are draggable for custom placement.</p>
+
         </div>
       </div>
 
